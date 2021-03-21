@@ -1,0 +1,58 @@
+.animation {
+    background-color: darkkhaki;
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sun_translate {
+    width: 100px;
+    animation-name: sun;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sun {
+    0% {
+        transform: translateX(0) translateY(0) ;
+    }
+
+    25% {
+        transform: translateX(600px) translateY(0) ;
+    }
+
+    50% {
+        transform: translateX(600px) translateY(600px) ;
+    }
+
+    75% {
+        transform: translateX(0) translateY(600px) ;
+    }
+
+    100% {
+        transform: translateX(0) translateY(0); 
+    }
+  }
+
+  .sun_rotate {
+    width: 100px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    animation-name: sun_rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes sun_rotate {
+      0% {
+          transform: rotate(0);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
